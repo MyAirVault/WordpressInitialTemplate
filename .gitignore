@@ -1,3 +1,9 @@
-# Docker persistence folders
-.wordpress/
-.mysql/
+# Docker persistence folders - keep the folders in git, ignore their contents
+.wordpress/*
+.mysql/*
+!.wordpress/.gitkeep
+!.mysql/.gitkeep
+
+# Claude Code local settings
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
